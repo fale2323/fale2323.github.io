@@ -452,6 +452,37 @@
           <a href="https://github.com/fale2323/smart-parking-detection" target="_blank" rel="noopener">Kode sumber ↗</a>
         </div>
       </article>
+
+      <!-- DSP / Image Processing Visualizer -->
+      <article class="project reveal">
+        <div class="project-top">
+          <div>
+            <h3 class="project-name">DSP / Image Processing Visualizer</h3>
+            <p class="project-role">Tool interaktif transform domain frekuensi — dijalankan langsung di browser</p>
+          </div>
+          <div class="metric">
+            <div class="num">0</div>
+            <div class="label">dependency backend</div>
+          </div>
+        </div>
+
+        <p class="project-desc">
+          Lima transform sinyal klasik — Sobel, FFT 2D, DCT (gaya kompresi JPEG), wavelet Haar, dan Gabor filter —
+          diimplementasikan dari nol di JavaScript murni, tanpa memanggil library DSP siap pakai. Semua perhitungan
+          jalan client-side, jadi bisa dicoba langsung tanpa install apa pun.
+        </p>
+
+        <div class="stack-row">
+          <span>Vanilla JS</span><span>Canvas API</span><span>Radix-2 FFT</span><span>8×8 Block DCT</span><span>No backend</span>
+        </div>
+
+        <div class="rootcause"><span class="k">// root cause —</span> menurunkan jumlah koefisien DCT yang disimpan memunculkan blocking artifact tepat di batas blok 8×8 — bukan bug, itu konsekuensi matematis membuang koefisien frekuensi tinggi per blok secara independen. Sengaja dibuat interaktif (slider) supaya efeknya terlihat langsung, bukan cuma dijelaskan di teks.</div>
+
+        <div class="project-links">
+          <a href="./dsp/" target="_blank" rel="noopener">Coba live demo ↗</a>
+          <a href="https://github.com/fale2323/fale2323.github.io/tree/main/dsp" target="_blank" rel="noopener">Kode sumber ↗</a>
+        </div>
+      </article>
     </section>
   </div>
 
