@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="7" fill="#0B0F14"/>
+  <!-- corner brackets, same motif as .sig-frame corners in the hero visual -->
+  <path d="M7 7 L7 11 M7 7 L11 7" stroke="#F2B84B" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <path d="M25 25 L25 21 M25 25 L21 25" stroke="#F2B84B" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <!-- status dot, same motif as .nav-mark .dot -->
+  <circle cx="16" cy="16" r="4" fill="#3FB8AF"/>
+</svg>
