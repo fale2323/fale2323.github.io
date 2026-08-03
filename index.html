@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fale — Computer Engineering / Edge AI &amp; Network Security</title>
+<title>Dzakwan Naufal Computer Engineering / Edge AI &amp; Network Security</title>
 <meta name="description" content="Portfolio Fale — Computer Engineering student. Proyek: deteksi objek edge AI dan sistem keamanan jaringan real-time.">
 <link rel="canonical" href="https://fale2323.github.io/">
 <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
@@ -51,7 +51,7 @@
 
 <header class="nav">
   <div class="nav-inner">
-    <a href="#top" class="nav-mark"><span class="dot"></span>fale · edge-ai / netsec</a>
+    <a href="#top" class="nav-mark"><span class="dot"></span>Naufal · edge-ai / netsec</a>
     <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links-list" aria-label="Buka menu navigasi">
       <span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
     </button>
@@ -71,7 +71,7 @@
       <div>
         <div class="eyebrow">Computer Engineering · PENS</div>
         <h1>Membangun sistem yang <span class="hl">melihat</span> dan <span class="hl">mengawasi</span> jaringannya sendiri.</h1>
-        <p class="lede">Fale — mahasiswa Teknik Komputer yang membangun deteksi objek edge AI dan sistem keamanan jaringan, dari model sampai deployment berkontainer, lengkap dengan analisis kegagalan yang jujur.</p>
+        <p class="lede">Dzakwan Naufal mahasiswa Teknik Komputer yang membangun deteksi objek edge AI dan sistem keamanan jaringan, dari model sampai deployment berkontainer, lengkap dengan analisis kegagalan yang jujur.</p>
         <div class="hero-cta">
           <a class="btn btn-primary" href="#projects">Lihat proyek</a>
           <a class="btn btn-ghost" href="https://github.com/fale2323" target="_blank" rel="noopener">GitHub ↗</a>
@@ -128,8 +128,8 @@
       </div>
       <div class="about-grid">
         <div class="reveal">
-          <p>Saya belajar Teknik Komputer dengan fokus di pemrosesan sinyal digital, pemrosesan citra, jaringan komputer, dan arsitektur komputer — lalu memilih untuk menghubungkan semuanya lewat proyek nyata, bukan cuma tugas kuliah.</p>
-          <p>Pola kerja saya: bangun sesuatu yang benar-benar jalan end-to-end, lalu dokumentasikan dengan jujur — termasuk bagian yang gagal dan kenapa. Setiap proyek di bawah punya bagian <em>root cause</em> yang menjelaskan limitasi nyata, bukan cuma daftar fitur yang berhasil.</p>
+          <p>Saya mempelajari hubungan komputer dan sistemnya dengan fokus di pemrosesan sinyal digital, pemrosesan citra, jaringan komputer, dan arsitektur komputer  lalu memilih untuk menghubungkan semuanya lewat proyek nyata, bukan cuma tugas kuliah.</p>
+          <p>Pola kerja saya: bangun sesuatu yang benar-benar jalan end-to-end, lalu dokumentasikan dengan jujur termasuk bagian yang gagal dan kenapa. Setiap proyek di bawah punya bagian <em>root cause</em> yang menjelaskan limitasi nyata, bukan cuma daftar fitur yang berhasil.</p>
         </div>
         <div class="reveal">
           <div class="skill-block">
@@ -161,7 +161,7 @@
         <div class="project-top">
           <div>
             <h3 class="project-name">Edge-AI Secure Surveillance System<span class="v2-badge">v2</span></h3>
-            <p class="project-role">Capstone — integrasi computer vision &amp; keamanan jaringan</p>
+            <p class="project-role">Capstone integrasi computer vision &amp; keamanan jaringan</p>
           </div>
           <div class="metric">
             <div class="num">3</div>
@@ -172,15 +172,15 @@
         <!-- 1. Hero Screenshot -->
         <div class="proj-sub">
           <div class="media-slot" data-ratio="wide">
-            <img src="./assets/edge-ai/hero.png" alt="Screenshot dashboard Edge-AI Secure Surveillance — panel status sistem menunjukkan ketiga service online, counter event, dan FPS inferensi" loading="lazy" width="1824" height="671">
+            <img src="./assets/edge-ai/hero.png" alt="Screenshot dashboard Edge-AI Secure Surveillance panel status sistem menunjukkan ketiga service online, counter event, dan FPS inferensi" loading="lazy" width="1824" height="671">
           </div>
         </div>
 
         <!-- 2. Short Description -->
         <p class="project-desc">
-          Edge node menjalankan YOLOv8n untuk deteksi objek dan mengirim hasilnya lewat HTTPS ke central server —
+          Edge node menjalankan YOLOv8n untuk deteksi objek dan mengirim hasilnya lewat HTTPS ke central server
           sementara service terpisah menyadap trafik jaringan itu sendiri: inspeksi TLS ClientHello, cross-reference
-          IP terhadap blocklist botnet C2, dan rule berbasis SNI. Bukan CV yang mendeteksi ancaman — sistem keamanan
+          IP terhadap blocklist botnet C2, dan rule berbasis SNI. Bukan CV yang mendeteksi ancaman sistem keamanan
           yang mengawasi dunia fisik dan jalur komunikasinya sekaligus.
         </p>
 
@@ -224,7 +224,7 @@
           <div class="decisions">
             <details>
               <summary>Kenapa HTTPS (self-signed), bukan HTTP polos, antar service?</summary>
-              <div class="decision-body">Supaya security-monitor punya trafik TLS <em>asli</em> untuk diinspeksi — ClientHello, cipher suite, SNI — bukan simulasi. Trade-off: perlu setup sertifikat self-signed dan security-monitor harus bisa membaca ClientHello tanpa decrypt isi payload-nya.</div>
+              <div class="decision-body">Supaya security-monitor punya trafik TLS <em>asli</em> untuk diinspeksi ClientHello, cipher suite, SNI — bukan simulasi. Trade-off: perlu setup sertifikat self-signed dan security-monitor harus bisa membaca ClientHello tanpa decrypt isi payload-nya.</div>
             </details>
             <details>
               <summary>Kenapa topologi disimulasikan sebagai 2 mesin terpisah, bukan localhost?</summary>
@@ -244,8 +244,11 @@
         <!-- 7. Root Cause -->
         <div class="proj-sub">
           <div class="proj-sub-label">Root Cause &amp; Limitasi</div>
-          <div class="rootcause"><span class="k">// root cause —</span> inspeksi sertifikat gagal untuk sertifikat besar yang terfragmentasi lintas beberapa paket TCP, karena Scapy dipakai tanpa TCP stream reassembly. Didokumentasikan sebagai limitasi, bukan disembunyikan.</div>
-          <div class="rootcause"><span class="k">// root cause —</span> rule "SNI mencurigakan" pakai heuristik entropy Shannon — bisa false-positive pada subdomain CDN yang memang random-looking. Severity sengaja diset medium, bukan high, untuk mencerminkan ketidakpastian itu.</div>
+          <div class="rootcause-wrap">
+            <div class="rootcause"><span class="k">// root cause</span> inspeksi sertifikat gagal untuk sertifikat besar yang terfragmentasi lintas beberapa paket TCP, karena Scapy dipakai tanpa TCP stream reassembly. Didokumentasikan sebagai limitasi, bukan disembunyikan.</div>
+            <div class="rootcause"><span class="k">// root cause</span> rule "SNI mencurigakan" pakai heuristik entropy Shannon — bisa false-positive pada subdomain CDN yang memang random-looking. Severity sengaja diset medium, bukan high, untuk mencerminkan ketidakpastian itu.</div>
+          </div>
+          <button type="button" class="rootcause-toggle" aria-expanded="false">Baca analisis lengkap <span class="rt-arrow">↓</span></button>
         </div>
 
         <p style="font-family: var(--mono); font-size: 12.8px; color: var(--text-muted); margin: 0 0 16px;">
@@ -290,7 +293,7 @@
                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
             <div class="media-placeholder" style="display:none;">
               <span class="icon">🖼</span>
-              <span>Screenshot belum diupload — otomatis muncul begitu file ditambahkan</span>
+              <span>Screenshot belum diupload otomatis muncul begitu file ditambahkan</span>
               <code>assets/smart-parking/hero.png</code>
             </div>
           </div>
@@ -347,7 +350,7 @@
             </details>
             <details>
               <summary>Kenapa FastAPI, bukan Flask?</summary>
-              <div class="decision-body">Validasi request otomatis lewat Pydantic dan dukungan async bawaan — pola yang sama juga dipakai lagi di central-server pada proyek capstone, jadi konsisten di seluruh portfolio.</div>
+              <div class="decision-body">Validasi request otomatis lewat Pydantic dan dukungan async bawaan pola yang sama juga dipakai lagi di central-server pada proyek capstone, jadi konsisten di seluruh portfolio.</div>
             </details>
           </div>
         </div>
@@ -355,7 +358,10 @@
         <!-- 7. Root Cause -->
         <div class="proj-sub">
           <div class="proj-sub-label">Root Cause &amp; Limitasi</div>
-          <div class="rootcause"><span class="k">// root cause —</span> model gagal mendeteksi individual kendaraan pada foto wide-shot dengan banyak kendaraan kecil. Bukan soal sudut kamera — akar masalahnya adalah skala objek relatif terhadap ukuran frame.</div>
+          <div class="rootcause-wrap">
+            <div class="rootcause"><span class="k">// root cause</span> model gagal mendeteksi individual kendaraan pada foto wide-shot dengan banyak kendaraan kecil. Bukan soal sudut kamera — akar masalahnya adalah skala objek relatif terhadap ukuran frame.</div>
+          </div>
+          <button type="button" class="rootcause-toggle" aria-expanded="false">Baca analisis lengkap <span class="rt-arrow">↓</span></button>
         </div>
 
         <!-- Project Outcomes -->
@@ -378,7 +384,7 @@
         <div class="project-top">
           <div>
             <h3 class="project-name">DSP / Image Processing Visualizer</h3>
-            <p class="project-role">Tool interaktif transform domain frekuensi — dijalankan langsung di browser</p>
+            <p class="project-role">Tool interaktif transform domain frekuensi dijalankan langsung di browser</p>
           </div>
           <div class="metric">
             <div class="num">0</div>
@@ -393,7 +399,7 @@
                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
             <div class="media-placeholder" style="display:none;">
               <span class="icon">🖼</span>
-              <span>Screenshot belum diupload — otomatis muncul begitu file ditambahkan</span>
+              <span>Screenshot belum diupload otomatis muncul begitu file ditambahkan</span>
               <code>assets/dsp/hero.png</code>
             </div>
           </div>
@@ -401,8 +407,8 @@
 
         <!-- 2. Short Description -->
         <p class="project-desc">
-          Delapan transform sinyal klasik — Sobel, FFT 2D, DCT (gaya kompresi JPEG), wavelet Haar, Gabor filter (domain gambar),
-          plus FIR low-pass, Wiener denoising, dan analisis spectral leakage (domain audio) — diimplementasikan dari nol
+          Delapan transform sinyal klasik Sobel, FFT 2D, DCT (gaya kompresi JPEG), wavelet Haar, Gabor filter (domain gambar),
+          plus FIR low-pass, Wiener denoising, dan analisis spectral leakage (domain audio) diimplementasikan dari nol
           di JavaScript murni, tanpa memanggil library DSP siap pakai. Semua perhitungan jalan client-side, jadi bisa
           dicoba langsung tanpa install apa pun.
         </p>
@@ -426,7 +432,7 @@
                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
             <div class="media-placeholder" style="display:none;">
               <span class="icon">🎬</span>
-              <span>GIF demo belum diupload — atau langsung coba live demo di bawah</span>
+              <span>GIF demo belum diupload atau langsung coba live demo di bawah</span>
               <code>assets/dsp/demo.gif</code>
             </div>
           </div>
@@ -446,15 +452,15 @@
           <div class="decisions">
             <details>
               <summary>Kenapa implementasi manual, bukan pakai library DSP?</summary>
-              <div class="decision-body">Supaya bisa jalan 100% client-side tanpa backend (bisa langsung di-host di GitHub Pages sebagai live demo), dan supaya pemahaman matematikanya bisa dibuktikan langsung dari kode — bukan cuma "saya tahu cara pakai library X".</div>
+              <div class="decision-body">Supaya bisa jalan 100% client-side tanpa backend (bisa langsung di-host di GitHub Pages sebagai live demo), dan supaya pemahaman matematikanya bisa dibuktikan langsung dari kode bukan cuma "saya tahu cara pakai library X".</div>
             </details>
             <details>
               <summary>Kenapa panjang buffer di-fix (256×256 gambar, 8192 sample audio)?</summary>
-              <div class="decision-body">Radix-2 FFT butuh panjang input pangkat 2. Trade-off-nya: gambar/audio besar otomatis di-downsample ke ukuran kerja tetap, demi performa yang konsisten di semua device — bukan performa terbaik untuk file besar.</div>
+              <div class="decision-body">Radix-2 FFT butuh panjang input pangkat 2. Trade-off-nya: gambar/audio besar otomatis di-downsample ke ukuran kerja tetap, demi performa yang konsisten di semua device bukan performa terbaik untuk file besar.</div>
             </details>
             <details>
               <summary>Kenapa Wiener denoising versi "global", bukan adaptif per-frame (STFT)?</summary>
-              <div class="decision-body">Wiener filter adaptif per-frame (overlap-add STFT) jauh lebih kompleks untuk didemokan interaktif di browser. Versi global (satu estimasi noise floor untuk seluruh sinyal) cukup untuk menunjukkan prinsipnya — limitasinya didokumentasikan eksplisit, bukan disamarkan seolah setara software profesional.</div>
+              <div class="decision-body">Wiener filter adaptif per-frame (overlap-add STFT) jauh lebih kompleks untuk didemokan interaktif di browser. Versi global (satu estimasi noise floor untuk seluruh sinyal) cukup untuk menunjukkan prinsipnya limitasinya didokumentasikan eksplisit, bukan disamarkan seolah setara software profesional.</div>
             </details>
           </div>
         </div>
@@ -462,8 +468,11 @@
         <!-- 7. Root Cause -->
         <div class="proj-sub">
           <div class="proj-sub-label">Root Cause &amp; Limitasi</div>
-          <div class="rootcause"><span class="k">// root cause —</span> menurunkan jumlah koefisien DCT yang disimpan memunculkan blocking artifact tepat di batas blok 8×8 — bukan bug, itu konsekuensi matematis membuang koefisien frekuensi tinggi per blok secara independen. Sengaja dibuat interaktif (slider) supaya efeknya terlihat langsung, bukan cuma dijelaskan di teks.</div>
-          <div class="rootcause"><span class="k">// root cause —</span> Wiener denoising memakai satu estimasi noise floor global (median magnitude spektrum), bukan adaptif per-frame — tidak akan menangani noise yang berubah-ubah sepanjang waktu.</div>
+          <div class="rootcause-wrap">
+            <div class="rootcause"><span class="k">// root cause</span> menurunkan jumlah koefisien DCT yang disimpan memunculkan blocking artifact tepat di batas blok 8×8 bukan bug, itu konsekuensi matematis membuang koefisien frekuensi tinggi per blok secara independen. Sengaja dibuat interaktif (slider) supaya efeknya terlihat langsung, bukan cuma dijelaskan di teks.</div>
+            <div class="rootcause"><span class="k">// root cause</span> Wiener denoising memakai satu estimasi noise floor global (median magnitude spektrum), bukan adaptif per-frame tidak akan menangani noise yang berubah-ubah sepanjang waktu.</div>
+          </div>
+          <button type="button" class="rootcause-toggle" aria-expanded="false">Baca analisis lengkap <span class="rt-arrow">↓</span></button>
         </div>
 
         <!-- Project Outcomes -->
@@ -486,11 +495,22 @@
   </div>
 
   <footer id="contact">
-    <div class="wrap footer-inner">
-      <p>Dibangun dari nol — model, backend, dan dashboard, semuanya dirakit dan diuji sendiri.</p>
-      <div class="footer-links">
-        <a href="mailto:dzakw97@gmail.com">dzakw97@gmail.com</a>
-        <a href="https://github.com/fale2323" target="_blank" rel="noopener">GitHub</a>
+    <div class="wrap">
+      <p class="footer-tagline">Dibangun dari nol model, backend, dan dashboard, semuanya dirakit dan diuji sendiri.</p>
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-col-label">Kontak</div>
+          <a href="mailto:dzakw97@gmail.com">dzakw97@gmail.com</a>
+          <a href="https://github.com/fale2323" target="_blank" rel="noopener">GitHub ↗</a>
+          <!-- Tambahkan LinkedIn/Resume di sini jika sudah punya link-nya, lihat tutorial di bawah -->
+          <!-- <a href="https://linkedin.com/in/username" target="_blank" rel="noopener">LinkedIn ↗</a> -->
+          <!-- <a href="./assets/cv.pdf" target="_blank" rel="noopener">Resume (PDF) ↗</a> -->
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-label">Status</div>
+          <span>Surabaya, Indonesia</span>
+          <span>Terbuka untuk magang/internship</span>
+        </div>
       </div>
     </div>
   </footer>
