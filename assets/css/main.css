@@ -485,8 +485,9 @@
     .metric{ text-align:left; }
 
     /* pipeline / architecture diagram becomes a vertical flow */
-    .pipeline, .arch-diagram{ flex-direction: column; align-items:flex-start; gap:8px; }
-    .pipeline .arrow, .arch-diagram .arrow{ padding:0; transform: rotate(90deg); transform-origin:left center; margin-left:10px; }
+    .pipeline, .arch-diagram{ flex-direction: column; align-items: stretch; gap:8px; }
+    .pipeline .node, .arch-diagram .node{ white-space: normal; width: 100%; box-sizing: border-box; }
+    .pipeline .arrow, .arch-diagram .arrow{ padding:4px 0; color: var(--text-faint); transform:none; margin-left:0; align-self:flex-start; }
 
     /* touch targets */
     .project-links{ flex-direction: column; gap: 4px; }
