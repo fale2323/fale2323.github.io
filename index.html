@@ -450,6 +450,89 @@
           <a href="https://github.com/fale2323/fale2323.github.io/tree/main/dsp" target="_blank" rel="noopener">Kode sumber ↗</a>
         </div>
       </article>
+
+      <!-- Personal Portfolio & Mind Vault -->
+      <article class="project reveal">
+        <div class="project-top">
+          <div>
+            <h3 class="project-name">Personal Portfolio &amp; Mind Vault</h3>
+            <p class="project-role">Galeri catatan pribadi yang ditarik langsung dari Google Keep</p>
+          </div>
+          <div class="metric">
+            <div class="num">0</div>
+            <div class="label">biaya hosting backend</div>
+          </div>
+        </div>
+
+        <!-- 1. Hero Screenshot (placeholder — belum ada capture) -->
+        <div class="proj-sub">
+          <div class="media-slot" data-ratio="16-9">
+            <img src="./assets/vault/hero.png" alt="Screenshot galeri Mind Vault menampilkan kartu catatan dari Google Keep" loading="lazy"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="media-placeholder" style="display:none;">
+              <span class="icon">🖼</span>
+              <span>Screenshot belum diupload otomatis muncul begitu file ditambahkan</span>
+              <code>assets/vault/hero.png</code>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Short Description -->
+        <p class="project-desc">
+          Galeri pribadi yang menarik catatan langsung dari Google Keep lewat Google Apps Script sebagai backend,
+          lalu dirender sebagai kartu masonry di frontend. Dibuat untuk jadi tempat berkembang seiring waktu — jumlah
+          catatan terus bertambah, jadi layout-nya dirancang tetap enak dilihat tanpa perlu di-redesign ulang tiap kali
+          isinya nambah.
+        </p>
+
+        <!-- 3. Architecture Diagram -->
+        <div class="proj-sub">
+          <div class="proj-sub-label">Arsitektur</div>
+          <div class="arch-diagram" aria-label="Alur data dari Google Keep ke galeri">
+            <span class="node">Google Keep</span><span class="arrow">→</span>
+            <span class="node">Google Apps Script (Web App / JSON endpoint)</span><span class="arrow">→</span>
+            <span class="node">Fetch client-side</span><span class="arrow">→</span>
+            <span class="node">Render masonry grid (CSS columns)</span>
+          </div>
+        </div>
+
+        <!-- 5. Tech Stack -->
+        <div class="proj-sub">
+          <div class="proj-sub-label">Tech Stack</div>
+          <div class="stack-row">
+            <span>Google Apps Script</span><span>Google Keep API</span><span>Vanilla JS</span><span>Tailwind CSS</span><span>CSS Masonry (columns)</span><span>No dedicated server</span>
+          </div>
+        </div>
+
+        <!-- 6. Engineering Decisions -->
+        <div class="proj-sub">
+          <div class="proj-sub-label">Keputusan Teknis</div>
+          <div class="decisions">
+            <details>
+              <summary>Kenapa Google Apps Script sebagai backend, bukan server sendiri?</summary>
+              <div class="decision-body">Apps Script bisa langsung baca Google Keep tanpa server terpisah, tanpa biaya hosting, dan cukup untuk trafik personal. Trade-off-nya: cold start lebih lambat dibanding backend dedicated, tapi cocok untuk skala proyek portofolio.</div>
+            </details>
+            <details>
+              <summary>Kenapa masonry (CSS columns) bukan grid rata seperti sebelumnya?</summary>
+              <div class="decision-body">Grid dengan tinggi baris seragam bikin semua kartu terlihat monoton begitu jumlah catatan bertambah banyak. CSS columns bikin tinggi kartu mengikuti panjang isi masing-masing catatan, jadi tetap enak dipindai walau kontennya terus tumbuh.</div>
+            </details>
+          </div>
+        </div>
+
+        <!-- 7. Root Cause -->
+        <div class="proj-sub">
+          <div class="proj-sub-label">Root Cause &amp; Limitasi</div>
+          <div class="rootcause-wrap">
+            <div class="rootcause"><span class="k">// root cause</span> CSS columns menyusun kartu per-kolom (atas ke bawah, baru pindah kolom), bukan urutan baca kiri-ke-kanan seperti masonry berbasis JS (mis. Masonry.js) sengaja dipilih karena tanpa dependency tambahan, trade-off-nya urutan visual tidak selalu 100% kronologis.</div>
+          </div>
+        </div>
+
+        <!-- 8. GitHub -->
+        <div class="project-links">
+          <a href="./vault/" target="_blank" rel="noopener">Coba live demo ↗</a>
+          <a href="https://github.com/fale2323/fale2323.github.io/tree/main/vault" target="_blank" rel="noopener">Kode sumber ↗</a>
+        </div>
+      </article>
     </section>
   </div>
 
